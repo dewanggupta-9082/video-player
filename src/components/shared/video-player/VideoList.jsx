@@ -25,9 +25,9 @@ const VideoList = () => {
     return () => clearInterval(interval);
   }, []);
 
-  useEffect(() => {
+  /* useEffect(() => {
     console.log("Rendering video index:", currentVideoIndex);
-  }, [currentVideoIndex]);
+  }, [currentVideoIndex]); */
 
   return (
     <div className="video-list">
@@ -35,7 +35,7 @@ const VideoList = () => {
         <VideoPlayerCard
           key={index}
           videoUrl={video.url}
-          description={video.description}
+          //       description={video.description}
           play={index === currentVideoIndex}
         />
       ))}

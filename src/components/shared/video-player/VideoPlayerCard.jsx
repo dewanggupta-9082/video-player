@@ -40,13 +40,8 @@ const VideoPlayerCard = ({ videoUrl, description, play }) => {
 }; */
 
   return (
-    <div className="video-card">
-      <video ref={videoRef} src={videoUrl} width="100%" controls>
-        Your browser
-      </video>
-      <div className="description-container">
-        <p className="description">{description}</p>
-      </div>
+    <div className={`video-card ${play ? "playing" : ""}`}>
+      <video ref={videoRef} src={videoUrl} muted />
     </div>
   );
 };

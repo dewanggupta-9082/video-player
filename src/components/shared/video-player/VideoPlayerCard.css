@@ -57,3 +57,7 @@
     width: 100%;
     display: block;
   }
+
+  .video-card:hover {
+    transform: scale(1.1);
+  }
